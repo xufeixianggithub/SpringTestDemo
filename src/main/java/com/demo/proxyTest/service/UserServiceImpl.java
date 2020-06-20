@@ -21,7 +21,6 @@ public class UserServiceImpl implements UserService {
     CommonMapper commonMapper;
 
     @Override
-    @Async
     public String queryUser(String userId) {
         PromotionSite promotionSite=commonMapper.queryPromotion(userId);
         System.out.println("UserServiceImpl ->" + userId);

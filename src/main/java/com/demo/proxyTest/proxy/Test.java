@@ -14,7 +14,7 @@ public class Test {
                 new Parent(new Xiaoming()));
         proxy.zhaoduixiang();
 
-        //createProxyClassFile();
+        createProxyClassFile();
     }
 
     public static void createProxyClassFile() {
