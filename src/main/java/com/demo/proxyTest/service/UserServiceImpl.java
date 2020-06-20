@@ -36,11 +36,6 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public String updatePromotionSite(Integer id) {
         commonMapper.updatePromotion(id);
-
-        if(true){
-            throw new RuntimeException("");
-        }
-
         System.out.println("updatePromotionSite ->" + id);
         return "updatePromotionSite ->" + id;
     }
